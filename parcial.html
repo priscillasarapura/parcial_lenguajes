@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parcial - Formulario</title>
+  <link rel="stylesheet" href="parcial.css" />
+</head>
+<body>
+  <form id="registroForm">
+    <label>Apellido:
+      <input type="text" id="apellido" required />
+      <span class="error" id="errorApellido"></span>
+    </label>
+
+    <label>Nombre:
+      <input type="text" id="nombre" required />
+      <span class="error" id="errorNombre"></span>
+    </label>
+
+    <label>DNI:
+      <input type="text" id="dni" maxlength="8" required />
+      <span class="error" id="errorDni"></span>
+    </label>
+
+    <label>Fecha de Nacimiento:
+      <input type="date" id="fecha" required />
+      <span class="error" id="errorFecha"></span>
+    </label>
+
+    <label>Email:
+      <input type="email" id="email" required />
+      <span class="error" id="errorEmail"></span>
+    </label>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+
+  <div id="preguntasContainer">
+    <button type="button" id="btnPreguntar">Preguntar Progresivamente</button>
+    <div id="preguntas"></div>
+    <button type="button" id="btnMostrarRespuestas" style="display: none;">Mostrar Respuestas</button>
+    <div id="respuestas"></div>
+  </div>
+  
+
+  <script src="parcial.js"></script>
+</body>
+</html>
