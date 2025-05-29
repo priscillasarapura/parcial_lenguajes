@@ -1,4 +1,4 @@
-// VALIDACIONES DEL FORMULARIO (mismo que antes)
+// VALIDACIONES DEL FORMULARIO
 document.getElementById('registroForm').addEventListener('submit', function (e) {
     e.preventDefault();
   
